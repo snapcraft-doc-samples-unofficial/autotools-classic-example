@@ -1,2 +1,2 @@
-bin_PROGRAMS = hello
-hello_SOURCES = main.c
+bin_PROGRAMS = autotools-classic-example
+autotools_classic_example_SOURCES = main.c
