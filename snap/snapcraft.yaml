@@ -19,5 +19,6 @@ parts:
     plugin: autotools
     source: .
     autotools-configure-parameters:
-      - LDFLAGS="-Wl,-dynamic-linker=/snap/core22/current/lib64/ld-linux-x86-64.so.2 -Wl,-rpath=/snap/core22/current/lib/x86_64-linux-gnu"
+      - LDFLAGS="-Wl,-dynamic-linker=/snap/core22/current/lib64/ld-linux-x86-64.so.2
+                 -Wl,-rpath=/snap/core22/current/lib/x86_64-linux-gnu"
       - --prefix=/usr
