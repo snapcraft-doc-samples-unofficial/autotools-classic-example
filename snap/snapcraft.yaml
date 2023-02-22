@@ -1,0 +1,22 @@
+name: autotools-classic-example
+version: "1.0"
+summary: An example snap for an autotools project
+description: |
+  Shows how to create a snap for an application that uses a Makefile for
+  build and installation.
+
+grade: devel
+base: core22
+confinement: classic
+
+apps:
+  # Using the name of the snap as the key name allows the program to be invoked by its name.
+  autotools-classic-example:
+    command: usr/bin/hello
+
+parts:
+  hello:
+    plugin: autotools
+    source: .
+    autotools-configure-parameters:
+      - --prefix=/usr
